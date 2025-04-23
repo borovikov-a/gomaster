@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"gomaster/hw/mathslice"
+	"gomaster/hw/toppackage/middlepackage/bottompackage/mathxxx"
 	"math"
 	"time"
 )
@@ -329,4 +330,12 @@ func main() {
 
 	// slice pkg func
 	checkSlicePkgFuncs()
+
+	// add new pkg mathxxx adn test it
+	if sum := mathxxx.AddInts(3, 2); sum != 5 {
+		panic(fmt.Sprintf("Sum must be equal 5; got %d", sum))
+	} else {
+		fmt.Println("Sum equal 5. Well done!")
+	}
+
 }
