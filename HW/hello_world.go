@@ -7,6 +7,8 @@ import (
 	"gomaster/hw/toppackage/middlepackage/bottompackage/mathxxx"
 	"math"
 	"time"
+
+	"github.com/borovikov-a/remotepkg"
 )
 
 const (
@@ -338,4 +340,5 @@ func main() {
 		fmt.Println("Sum equal 5. Well done!")
 	}
 
+	remotepkg.AddAndPrint(234, 2111)
 }
